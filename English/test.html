@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <style>
+        /* Creates the split screen layout */
+        .split-screen {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Styles the left panel (the list) */
+        .left-panel {
+            width: 50%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 2px solid #ccc;
+            overflow-y: auto;
+        }
+
+        /* Styles the right panel (the content viewer) */
+        .right-panel {
+            width: 50%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Music list styling */
+        .music-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .music-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .music-link {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .music-link:hover {
+            color: #007BFF;
+        }
+
+        .song-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .artist-name {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="split-screen">
+        <!-- LEFT HALF: The Music List -->
+        <div class="left-panel">
+            <h2>My Playlist</h2>
+            <ul class="music-list">
+                
+                <!-- Music Item 1 -->
+                <li class="music-item">
+                    <a href="song1.html" target="content-viewer" class="music-link">
+                        <div class="song-title">Bohemian Rhapsody</div>
+                        <div class="artist-name">by Queen</div>
+                    </a>
+                </li>
+
+                <!-- Music Item 2 -->
+                <li class="music-item">
+                    <a href="song2.html" target="content-viewer" class="music-link">
+                        <div class="song-title">Blinding Lights</div>
+                        <div class="artist-name">by The Weeknd</div>
+                    </a>
+                </li>
+
+                <!-- Music Item 3 -->
+                <li class="music-item">
+                    <a href="song3.html" target="content-viewer" class="music-link">
+                        <div class="song-title">Hotel California</div>
+                        <div class="artist-name">by Eagles</div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- RIGHT HALF: Content Window -->
+        <iframe name="content-viewer" class="right-panel" src="about:blank">    
+            <!-- This iframe will display the linked .html files when clicked -->
+        </iframe>
+    </div>
+
+</body>
+</html>
+
+
+<ul>
+        <li>
+            <strong>
+                Agressive
+            </strong><br>
+
+            <br>
+        </li>
+        <br>
+        <li>
+            <strong>
+                "Chill"
+            </strong><br>
+
+            <br>Love You Like A Love Song
+            <ul>- Selena Gomez & The Scene</ul>
+
+            <br>505
+            <ul>by Arctic Monkeys</ul>
+
+            <br>505
+            <ul>by Arctic Monkeys</ul>
+
+            <br>505
+            <ul>by Arctic Monkeys</ul>
+
+            <br>505
+            <ul>by Arctic Monkeys</ul>
+
+
+        </li>
+    </li>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Music List</title>
+    <style>
+        /* Creates the split screen layout */
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+
+        /* Styles the left half (The Music List) */
+        .left-half {
+            flex: 1;
+            background-color: #f4f4f9;
+            padding: 20px;
+            overflow-y: auto; /* Adds a scrollbar if the list is long */
+            border-right: 2px solid #ccc;
+        }
+
+        /* Styles the right half (Empty or future player) */
+        .right-half {
+            flex: 1;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #888;
+        }
+
+        /* Music List Styling */
+        .music-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .music-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .music-link {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .music-link:hover {
+            color: #007bff;
+        }
+
+        .song-title {
+            font-weight: bold;
+            display: block;
+        }
+
+        .artist-name {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LEFT HALF: MUSIC LIST -->
+    <div class="left-half">
+        <h2>My Playlist</h2>
+        <ul class="music-list">
+            
+            <!-- Song Item 1 -->
+            <li class="music-item">
+                <a href="path/to/song1.mp3" class="music-link">
+                    <span class="song-title">Bohemian Rhapsody</span>
+                    <span class="artist-name">Queen</span>
+                </a>
+            </li>
+
+            <!-- Song Item 2 -->
+            <li class="music-item">
+                <a href="path/to/song2.mp3" class="music-link">
+                    <span class="song-title">Blinding Lights</span>
+                    <span class="artist-name">The Weeknd</span>
+                </a>
+            </li>
+
+            <!-- Song Item 3 -->
+            <li class="music-item">
+                <a href="path/to/song3.mp3" class="music-link">
+                    <span class="song-title">Stayin' Alive</span>
+                    <span class="artist-name">Bee Gees</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- RIGHT HALF: CONTENT AREA -->
+    <div class="right-half">
+        <p>Your media player or details go here...</p>
+    </div>
+
+</body>
+</html>

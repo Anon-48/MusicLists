@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tagalog Page</title>
+</head>
+<body>
+    <h2>Tagalog Page</h2>
+    <nav> |
+        <a href="../eng.html">HOME</a> |
+        <a href="../English/depressed.html">DEPRESSED</a>
+        <a href="../English/english-lists.html">ENGLISH</a> |
+        <a href="../English/nightrides.html">NIGHT RIDES</a> |
+        <a href="../Phonks/phonks.html">PHONK</a> |
+        <a href="tagalog-lists.html">TAGALOG</a> |
+    </nav>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Music List</title>
+    <style>
+        /* Resets default margins and sets up the split layout */
+        body {
+            margin: 0;
+            display: flex;
+            font-family: sans-serif;
+            height: 100vh;
+        }
+
+        /* Styles the left side to take exactly half the screen */
+        .left-half {
+            flex: 1;
+            background-color: #f4f4f9;
+            padding: 40px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Adds a scrollbar if the list gets too long */
+        }
+
+        /* Styles the right side to take the other half */
+        .right-half {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        /* Styles the list and items */
+        .music-list {
+            list-style: none; /* Removes default bullet points */
+            padding: 0;
+        }
+
+        .music-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .song-title {
+            font-weight: bold;
+            display: block;
+            font-size: 1.1em;
+        }
+
+        .artist-name {
+            color: #555;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Side: Music List -->
+    <div class="left-half">
+        <h2>My Playlist</h2>
+        <ul class="music-list">
+            <li>
+                <span class="song-title">Bohemian Rhapsody</span>
+                <span class="artist-name">Queen</span>
+            </li>
+            <li>
+                <span class="song-title">Blinding Lights</span>
+                <span class="artist-name">The Weeknd</span>
+            </li>
+            <li>
+                <span class="song-title">Shape of You</span>
+                <span class="artist-name">Ed Sheeran</span>
+            </li>
+            <li>
+                <span class="song-title">Hotel California</span>
+                <span class="artist-name">Eagles</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Right Side: Content Placeholder -->
+    <div class="right-half">
+        <!-- You can place your right-side content here later -->
+    </div>
+
+</body>
+</html>
+
